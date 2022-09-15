@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+ text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box{
+    
+   width: 600px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin : auto;
+  position: absolute;
+  right:25%;
+
+}
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+
+.col-25 {
+  
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], input[type=password],input[type=date],input[type=email]{
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.submit {
+  background-color: #00cc44;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border:none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 15%;
+  opacity: 0.9;
+}
+
+
+</style>
+</head>
+<body>
+<div class ="box">
+<form id="user-form">
+  <div class="container">
+    <h1>Registration Form</h1>
+     <div class="row">
+      <div class="col-25">
+      <br>
+         <label for="name"><b>Name</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" placeholder="Enter Full Name" name="name" id="name" required>
+      </div>
+    </div>
+    
+     <div class="row">
+      <div class="col-25">
+      <br>
+         <label for="email"><b>Email</b></label>
+      </div>
+      <div class="col-75">
+         <input type="email" placeholder="Enter Email" name="email" id="email" required>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-25">
+      <br>
+         <label for="psw"><b>Password</b></label>
+      </div>
+      <div class="col-75">
+        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+      </div>
+    </div>
+   
+  
+     <div class="row">
+      <div class="col-25">
+      <br>
+         <label for="birthday"><b>Date of Birth</b></label>
+      </div>
+      <div class="col-75">
+         <input type="date"  placeholder="date" name="dob" id="dob" required>
+      </div>
+    </div>
+    <div class = "end">
+    <label for="acceptTerms"><b>Accept Terms & Conditions</b></label>
+	<input type="checkbox" id="acceptTerms" name="acceptTerms">
+  
+    <br>
+    <button type="submit" class="submit">Submit</button>
+    </div>
+  </div>
+</form>
+  </div>
+  <br>
+
+ 
+
+
+<script src="val.js"></script>
+  
+</body>
+ <body>
+<div
+class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+<div class="mx-auto">
+  <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+  <div class="divide-y divide-gray-300/50" id="user-entries"></div>
+</div>
+<body>
+
+</html>
+
+
